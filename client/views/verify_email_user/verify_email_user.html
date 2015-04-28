@@ -1,0 +1,18 @@
+<template name="verify_email_user">
+  {{>sidebar name="Verify Email User"}}
+  <div class="pusher">
+    <div class="ui black big launch right attached fixed button menuButton">
+      <i class="content icon"></i>
+      <span class="text">Menu</span>
+    </div>
+
+    <div class="ui  grid">
+      <div class="two wide column"></div>
+      <div class="eight wide column">
+        <h1>Verify Email (User)</h1>
+        {{> quickForm collection="verify_email_user" id="insertverifyuser" type="insert"}}
+      </div>
+    </div>
+
+  </div>
+</template>
