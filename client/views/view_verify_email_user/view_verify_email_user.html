@@ -1,0 +1,7 @@
+<template name="view_verify_email_user">
+    <p>Template view_verify_email_user</p>
+
+    {{#each emails}}
+    <p><a href="/verify_email_user/{{_id}}">View this email in {{language}}</a></p>
+    {{/each}}
+</template>

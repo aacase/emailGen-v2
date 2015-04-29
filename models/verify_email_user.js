@@ -1,16 +1,51 @@
 verify_email_user = new Mongo.Collection('verify_email_user');
 
 verify_email_user.attachSchema(
-    new SimpleSchema({
-    title: {
+  new SimpleSchema({
+    language: {
       type: String
     },
-    content: {
+    header: {
       type: String
     },
-    createdAt: {
-      type: Date,
-      denyUpdate: true
+    greeting: {
+      type: String
+    },
+    paragraph1: {
+      type: String
+    },
+    paragraph2: {
+      type: String
+    },
+    buttonText: {
+      type: String
+    },
+    webConsole: {
+      type: String
+    },
+    keepHandy: {
+      type: String
+    },
+    username: {
+      type: String
+    },
+    downloadLink: {
+      type: String
+    },
+    iconDesc: {
+      type: String
+    },
+    iconLink: {
+      type: String
+    },
+    iconAnd: {
+      type: String
+    },
+    iconLink2: {
+      type: String
+    },
+    helpfulResourcesLang: {
+      type: String
     }
   })
 );
@@ -19,13 +54,13 @@ verify_email_user.attachSchema(
 // Add custom permission rules if needed
 if (Meteor.isServer) {
   verify_email_user.allow({
-    insert : function () {
+    insert: function() {
       return true;
     },
-    update : function () {
+    update: function() {
       return true;
     },
-    remove : function () {
+    remove: function() {
       return true;
     }
   });
