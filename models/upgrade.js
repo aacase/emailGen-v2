@@ -1,17 +1,25 @@
 upgrade = new Mongo.Collection('upgrade');
 
 upgrade.attachSchema(
-    new SimpleSchema({
-    title: {
+  new SimpleSchema({
+    language: {
       type: String
     },
-    content: {
+    header: {
       type: String
     },
-    createdAt: {
-      type: Date,
-      denyUpdate: true
-    }
+    greeting: {
+      type: String
+    },
+    paragraph1: {
+      type: String
+    },
+    paragraph2: {
+      type: String
+    },
+    buttonText: {
+      type: String
+    },
   })
 );
 
@@ -19,13 +27,13 @@ upgrade.attachSchema(
 // Add custom permission rules if needed
 if (Meteor.isServer) {
   upgrade.allow({
-    insert : function () {
+    insert: function() {
       return true;
     },
-    update : function () {
+    update: function() {
       return true;
     },
-    remove : function () {
+    remove: function() {
       return true;
     }
   });

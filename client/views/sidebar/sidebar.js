@@ -16,9 +16,7 @@ Template['sidebar'].events({
 Template.sidebar.rendered= function(){
   $('.sidebar').sidebar();
   // console.log(this.model);
-    if(this.data.model=="verify_email_user"){
-      Session.set('y',verify_email_user);
-    }
+
 
 
 };

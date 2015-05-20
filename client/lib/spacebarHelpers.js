@@ -25,3 +25,12 @@ Template.registerHelper('debug', function (optionalValue) {
 Template.registerHelper('constant', function (what) {
   return Meteor.App[what.toUpperCase()];
 });
+
+
+Template.registerHelper('equals',
+    function(v1, v2) {
+        if (v1==v2){
+          return true;
+        }
+    }
+);

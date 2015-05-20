@@ -1,0 +1,7 @@
+<template name="viewUpgrade">
+    <p>Template view_upgrade</p>
+
+    {{#each emails}}
+    <p><a href="/upgrade/{{_id}}">View this email in {{language}}</a></p>
+    {{/each}}
+</template>

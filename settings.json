@@ -2,5 +2,10 @@
     "orion-cli": {
         "profile": "default",
         "config": "private/orion-config.json"
+    },
+
+    {
+    "slack" : "https://hooks.slack.com/services/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"
     }
+
 }
